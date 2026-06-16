@@ -8,7 +8,7 @@ Este repositório documenta um estudo experimental sobre o impacto de injetar o 
 
 ## Motivação
 
-O `A11Y.md` propõe tratar acessibilidade desde o início do desenvolvimento, e não como uma etapa de validação no final. A hipótese testada foi: fornecer esse documento como contexto para a IA já na geração do código reduz significativamente a quantidade de barreiras de acessibilidade introduzidas?
+O [A11Y.md](https://github.com/fecarrico/A11Y.md) propõe tratar acessibilidade desde o início do desenvolvimento, e não como uma etapa de validação no final. A hipótese testada foi: fornecer esse documento como contexto para a IA já na geração do código reduz significativamente a quantidade de barreiras de acessibilidade introduzidas?
 
 ---
 
@@ -16,7 +16,6 @@ O `A11Y.md` propõe tratar acessibilidade desde o início do desenvolvimento, e 
 
 ```
 .
-├── A11Y.md                  # Documento de diretrizes de acessibilidade usado como contexto
 ├── docs/
     └──RELATORIO-TESTE-A11Y.md  # Relatório completo com metodologia, resultados e conclusões
 └── teste-a11y/              # Projeto Vite com as 4 telas geradas pela IA e axe-core plugado
@@ -31,7 +30,7 @@ O `A11Y.md` propõe tratar acessibilidade desde o início do desenvolvimento, e 
 
 ## Metodologia
 
-Teste A/B controlado: mesma IA, mesmo prompt, única variável alterada foi a presença do `A11Y.md` no contexto.
+Teste A/B controlado: mesma IA, mesmo prompt, única variável alterada foi a presença do [A11Y.md](https://github.com/fecarrico/A11Y.md) no contexto.
 
 A versão baseline (sem A11Y.md) foi gerada em **sessão separada e cega** — sem nenhum arquivo de acessibilidade por perto — para evitar que o modelo gerasse código acessível "sem querer", anulando a comparação.
 
